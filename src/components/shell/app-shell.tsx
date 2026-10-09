@@ -1,6 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { Outlet, useLocation } from 'react-router-dom'
-import { DemoPanel } from '@/components/shell/demo-panel'
 import { MobileSidebar, Sidebar } from '@/components/shell/sidebar'
 import { Topbar } from '@/components/shell/topbar'
 
@@ -28,7 +27,6 @@ export function AppShell() {
           </AnimatePresence>
         </main>
       </div>
-      <DemoPanel />
     </div>
   )
 }
