@@ -1,0 +1,130 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+@import '@fontsource/inter/800.css';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --radius: 0.75rem;
+
+  /* AGC Space brand */
+  --brand-navy: #2b3a67;
+  --brand-navy-dark: #1d2847;
+  --brand-orange: #f2790a;
+  --brand-orange-dark: #d4660a;
+
+  --background: #f7f8fb;
+  --foreground: #1a1f2e;
+
+  --card: #ffffff;
+  --card-foreground: #1a1f2e;
+
+  --popover: #ffffff;
+  --popover-foreground: #1a1f2e;
+
+  --primary: var(--brand-navy);
+  --primary-foreground: #ffffff;
+
+  --secondary: #eef1f8;
+  --secondary-foreground: var(--brand-navy);
+
+  --accent: var(--brand-orange);
+  --accent-foreground: #ffffff;
+
+  --muted: #eef1f6;
+  --muted-foreground: #667085;
+
+  --success: #16a34a;
+  --success-foreground: #ffffff;
+  --success-bg: #ecfdf3;
+
+  --warning: #d97706;
+  --warning-foreground: #ffffff;
+  --warning-bg: #fffaeb;
+
+  --danger: #dc2626;
+  --danger-foreground: #ffffff;
+  --danger-bg: #fef2f2;
+
+  --info: #2563eb;
+  --info-foreground: #ffffff;
+  --info-bg: #eff6ff;
+
+  --destructive: var(--danger);
+  --destructive-foreground: #ffffff;
+
+  --border: #e3e7ef;
+  --input: #e3e7ef;
+  --ring: var(--brand-navy);
+
+  --sidebar: var(--brand-navy);
+  --sidebar-foreground: #e8ebf5;
+  --sidebar-muted: #9aa5c7;
+  --sidebar-accent: var(--brand-orange);
+  --sidebar-active-bg: rgba(242, 121, 10, 0.16);
+  --sidebar-hover-bg: rgba(255, 255, 255, 0.06);
+}
+
+@theme inline {
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-success-bg: var(--success-bg);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-warning-bg: var(--warning-bg);
+  --color-danger: var(--danger);
+  --color-danger-foreground: var(--danger-foreground);
+  --color-danger-bg: var(--danger-bg);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-info-bg: var(--info-bg);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-brand-navy: var(--brand-navy);
+  --color-brand-navy-dark: var(--brand-navy-dark);
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-orange-dark: var(--brand-orange-dark);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-muted: var(--sidebar-muted);
+  --color-sidebar-accent: var(--sidebar-accent);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+}
