@@ -3,6 +3,8 @@
 Maquette frontend navigable (données mockées, aucun backend réel) couvrant les 3 axes :
 présence & tâches, assistance IA par rôle, communication Facebook.
 
+🔗 **Démo en ligne** : https://m-tech-cod.github.io/agc-space-maquette/
+
 ## Lancer en local
 
 ```bash
